@@ -1,0 +1,22 @@
+https://www.youtube.com/watch?v=Nl54MJDR2p8
+
+1. Creating a boilerprate:
+
+Delete:
+logo.svg
+setupTests.js
+serviceWorker.js 
+index.css 
+App.test.js 
+
+index.js get rid of code 
+App.js get rid of code 
+
+Some important shortcuts with "ES7 React/Redux/GraphQL/React-Native snippets" addon 
+- rafce - creates a react component boilerplate
+
+If you import your component like:
+import Navbar from './components/Navbar'
+It will look for index.js file inside Navbar folder
+
+Poczytać co to jest styled-components
