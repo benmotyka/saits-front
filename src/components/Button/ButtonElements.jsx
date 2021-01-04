@@ -15,6 +15,8 @@ display: flex;
 justify-content: center;
 align-items: center;
 transition: all 0.2s ease-in-out;
+display: ${({hidden}) => (hidden?'none':'flex')};
+text-decoration: none;
 
 &:hover{
     transition: all 0.2s ease-in-out;

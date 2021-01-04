@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {HeroContainer, HeroBg, VideoBg, HeroContent, HeroP, HeroH1, HeroBtnWrapper, ArrowForward, ArrowRight } from "./HeroElements"
+import {HeroContainer, HeroBg, VideoBg, HeroContent, HeroP, HeroH1, HeroBtnWrapper, ArrowForward, ArrowRight} from "./HeroElements"
 import {Button} from '../Button/ButtonElements'
 const HeroSection = () => {
 
@@ -19,8 +19,8 @@ const HeroSection = () => {
                 <HeroH1>Something about IT security</HeroH1>
                 <HeroP>Politechniki Rzeszowskiej</HeroP>
                 <HeroBtnWrapper>
-                <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover} dark="true" big="true" fontBig="true" >
-                        O nas {hover?<ArrowForward/>:<ArrowRight/>}
+                <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover} smooth={true} duration={500} spy={true} exact="true" dark="true" big="true" fontBig="true" >
+                        O nas
                     </Button>
                 </HeroBtnWrapper>
             </HeroContent>
