@@ -40,7 +40,8 @@ cursor: pointer;
 letter-spacing: 0.3rem;
 margin-left: 24px;
 font-weight: bold;
-text-decoration: none;`
+text-decoration: none;
+`
 
 export const MobileIcon = styled.div`
 display:none;

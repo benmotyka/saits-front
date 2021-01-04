@@ -8,8 +8,8 @@ const Navbar = ({toggle}) => {
     <>
       <Nav>
         <NavbarContainer>
-         {/* <NavLogo to="/">{logoName}</NavLogo> */}
-         <NavLogo to="/"><img src="/logo.png" width="130px"alt=""/></NavLogo>
+         {/* <NavLogo to="home">Saits</NavLogo> */}
+         <NavLogo to="home"><img src="img/logo.png" width="130px"alt="" /></NavLogo>
           <MobileIcon onClick={toggle}>
               <FaBars/>
           </MobileIcon>
