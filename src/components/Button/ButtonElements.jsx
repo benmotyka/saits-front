@@ -3,6 +3,8 @@ import {Link} from 'react-scroll'
 import {colors} from "../constants"
 
 export const Button = styled(Link)`
+box-sizing: border-box;
+height: 3rem;
 border-radius: 2rem;
 background: ${colors.green};
 white-space: nowrap;

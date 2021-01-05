@@ -2,6 +2,7 @@ import styled from "styled-components"
 import {colors} from "../constants"
 
 export const InfoContainer = styled.div`
+
 color: ${colors.white};
 background: ${({dark}) => (dark?colors.dark:colors.white)};
 
@@ -13,6 +14,7 @@ padding: 100px 0;
 export const InfoWrapper = styled.div`
 display: grid;
 z-index: 1;
+
 height: 860px;
 width: 100%;
 max-width: 1100px;

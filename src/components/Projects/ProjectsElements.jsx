@@ -3,6 +3,7 @@ import {colors} from "../constants"
 
 
 export const ProjectsContainer = styled.div`
+
 height: 800px;
 display: flex;
 flex-direction: column;
