@@ -48,7 +48,8 @@ const InfoSection = ({
                 <Subtitle dark={darkText}>{description}</Subtitle>
                 <BtnWrap>
                   <Button
-                    hidden={btnHidden}
+                    hidden={btnHidden
+                    }
                     href={to}
                     onMouseEnter={onHover}
                     onMouseLeave={onHover}
@@ -57,9 +58,9 @@ const InfoSection = ({
                     spy={true}
                     exact="true"
                     offset={-80}
-                    dark={dark}
+                    dark={darkText}
                     big="true"
-                    fontBig="true"
+                    fontbig="true"
                     onClick={() => window.open("https://konf.sasit.prz.edu.pl/")}
                   >
                     {buttonText} {hover ? <ArrowForward /> : <ArrowRight />}

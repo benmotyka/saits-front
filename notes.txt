@@ -20,3 +20,6 @@ import Navbar from './components/Navbar'
 It will look for index.js file inside Navbar folder
 
 Poczytać co to jest styled-components
+
+Jak to ma działać to musi być chyba 
+  // "homepage":"new/",

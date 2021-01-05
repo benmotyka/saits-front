@@ -50,7 +50,7 @@ color: #000;
 }
 `
 
-export const FooterLinkTitle = styled.h1`
+export const FooterLinkTitle = styled.h3`
 font-size: 14px;
 margin-bottom: 16px;
 `

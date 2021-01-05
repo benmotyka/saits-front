@@ -7,7 +7,7 @@ background: #00ab00;
 white-space: nowrap;
 padding: ${({big}) => (big?'0.8rem 2.4rem': '0.6rem 1.8rem')};
 color: ${({dark}) => (dark? '#000': "#fff")};
-font-size: ${({fontBig}) => (fontBig? '1.5rem':'1rem')};
+font-size: ${({fontbig}) => (fontbig? '1.5rem':'1rem')};
 outline: none;
 border: none;
 cursor: pointer;

@@ -52,7 +52,7 @@ function Footer() {
             </WebsiteRights>
 
             <SocialIcons>
-                <SocialIconLink href="//https://www.facebook.com/SAITSPRz" target="_blank" aria-label="Facebook">
+                <SocialIconLink href="https://www.facebook.com/SAITSPRz" target="_blank" aria-label="Facebook">
                 <FaFacebook/>
                 </SocialIconLink>
                 <SocialIconLink href="https://instagram.com" target="_blank" aria-label="Instagram">

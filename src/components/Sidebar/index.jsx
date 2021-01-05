@@ -18,9 +18,9 @@ const Sidebar = ({isOpen, toggle}) => {
                     <SidebarLink to="projects" onClick={toggle}>
                         Projekty
                     </SidebarLink>
-                    <SidebarLink to="gallery" onClick={toggle}>
+                    {/* <SidebarLink to="gallery" onClick={toggle}>
                         Galeria
-                    </SidebarLink>
+                    </SidebarLink> */}
                     </SidebarMenu>
                     {/* <SideBtnWrap>
                         <SidebarRoute to="/login">

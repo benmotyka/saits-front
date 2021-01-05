@@ -6,14 +6,14 @@ export const frontObj1 = {
   headline: "O nas",
   SubtitleDark: "false",
   description:
-    "Jesteśmy grupą studentów cośtam lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel nisi purus. Mauris ornare sodales velit ac iaculis. Aliquam erat volutpat. Vestibulum nec tellus turpis. Nulla vulputate eros at ante scelerisque fringilla. Sed at tincidunt lectus, sit amet finibus leo. Co roku w siedzibie politechniki prowadzimy konferencję na którą zapraszamy gości z całego świata ",
+    "Jesteśmy grupą studentów cośtam lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel nisi purus. Mauris ornare sodales velit ac iaculis. Aliquam erat volutpat. Vestibulum nec tellus turpis. Nulla vulputate eros at ante scelerisque fringilla. Sed at tincidunt lectus, sit amet finibus leo. Corocznie w siedzibie politechniki prowadzimy konferencję na którą zapraszamy prelegentów ze świata bezpieczeństwa IT. ",
   buttonText: "Konferencja",
   imgStart: false,
   src: "/img/about-us.png",
   alt: "O nas grafika osoby",
   primary: true,
   to: "conference",
-  btnHidden: "true",
+  btnHidden: true,
 };
 
 export const frontObj2 = {
