@@ -4,7 +4,7 @@ import {colors} from "../constants"
 
 export const ProjectsContainer = styled.div`
 
-height: 800px;
+height: 100vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
