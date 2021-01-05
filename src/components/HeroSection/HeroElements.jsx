@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {FiArrowRight, FiArrowRightCircle} from 'react-icons/fi'
+import {BsBoxArrowInUpRight, BsBoxArrowUpRight} from "react-icons/bs"
 import {colors} from "../constants"
 
 export const HeroContainer = styled.div`
@@ -8,7 +8,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 0 25px;
-height: 800px;
+height: 100vh;
 position: relative;
 z-index: 1;
 
@@ -92,12 +92,12 @@ flex-direction: column;
 align-items: center;
 `
 
-export const ArrowForward = styled(FiArrowRightCircle)`
+export const ArrowForward = styled(BsBoxArrowUpRight)`
 margin-left: 0.5rem;
 font-size: 1.4rem;
 `
 
-export const ArrowRight = styled(FiArrowRight)`
+export const ArrowRight = styled(BsBoxArrowInUpRight)`
 margin-left: 0.5rem;
 font-size: 1.4rem;
 `
