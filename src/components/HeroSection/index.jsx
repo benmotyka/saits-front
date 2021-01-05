@@ -19,7 +19,7 @@ const HeroSection = () => {
                 <HeroH1>Something about IT security</HeroH1>
                 <HeroP>Politechniki Rzeszowskiej</HeroP>
                 <HeroBtnWrapper>
-                <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover} smooth={true} duration={500} spy={true} exact="true" dark="true" big="true" fontbig="true" >
+                <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover} smooth={true} duration={500} offset={-80} spy={true} exact="true" dark="true" big="true" fontbig="true" >
                         O nas
                     </Button>
                 </HeroBtnWrapper>

@@ -4,7 +4,7 @@ import {ProjectsContainer, ProjectsH1, ProjectsWrapper, ProjectsCard, ProjectsLo
 const Projects = () => {
     return (
         <ProjectsContainer id="projects">
-            <ProjectsH1>Projekty</ProjectsH1>
+            <ProjectsH1>Działalność</ProjectsH1>
             <ProjectsWrapper>
             <ProjectsCard onClick={() => window.open("https://www.saferinternet.pl/dbi/o-dbi.html")}>
                     <ProjectsLogo src="/img/project-safety-day.svg"/>
@@ -21,6 +21,7 @@ const Projects = () => {
                     <ProjectsH2>Projekt społeczny</ProjectsH2>
                     <ProjectsP>Pomagamy osobom nie związanym w branżą w podnoszeniu kompetencji z szeroko pojętego bezpieczeństwa IT</ProjectsP>
                 </ProjectsCard>
+                
             </ProjectsWrapper>
         </ProjectsContainer>
     )
