@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import {colors} from "../constants"
 
 
 export const ProjectsContainer = styled.div`
@@ -7,7 +8,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-background: #010606;
+background: ${colors.black};
 
 @media screen and (max-width: 768px){
     height: 1100px;
@@ -18,9 +19,9 @@ background: #010606;
 }
 `
 
-export const ProjectsH1 = styled.h1`
+export const ProjectsH1 = styled.h2`
 font-size: 2rem;
-color: #fff;
+color: ${colors.white};
 margin-bottom: 64px;
 
 @media screen and (max-width: 480px){
@@ -48,7 +49,7 @@ padding: 0 50px;
 `
 
 export const ProjectsCard = styled.div`
-background: #fff;
+background: ${colors.white};
 display: flex;
 flex-direction: column;
 justify-content: flex-start;

@@ -1,9 +1,10 @@
 import styled from "styled-components"
 import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
+import {colors} from "../constants"
 
 export const FooterContainer = styled.footer`
-background-color: #fff;
+background-color: ${colors.white};
 `
 
 export const FooterWrap = styled.div`
@@ -41,7 +42,7 @@ margin: 1rem;
 text-align: left;
 width: 160px;
 box-sizing: border-box;
-color: #000;
+color: ${colors.black};
 
 @media screen and (max-width: 420px){
     margin: 0;
@@ -56,25 +57,25 @@ margin-bottom: 16px;
 `
 
 export const FooterLink = styled(LinkS)`
-color: #000;
+color: ${colors.black};
 text-decoration: none;
 margin-bottom: 0.5rem;
 font-size: 14px;
 cursor: pointer;
 
 &:hover{
-    color: #00ab00; 
+    color: ${colors.green}; 
     transition: 0.3s ease-in-out;
 }
 `
 export const FooterLinkExternal = styled.a`
-color: #000;
+color: ${colors.black};
 text-decoration: none;
 margin-bottom: 0.5rem;
 font-size: 14px;
 
 &:hover{
-    color: #00ab00; 
+    color: ${colors.green}; 
     transition: 0.3s ease-in-out;
 }
 `
@@ -97,7 +98,7 @@ margin: 40px auto 0 auto;
 `
 
 export const SocialLogo = styled(LinkR)`
-color: #000;
+color: ${colors.black};
 justify-self: start;
 cursor: pointer;
 text-decoration: none;
@@ -108,7 +109,7 @@ margin-bottom: 1rem;
 font-weight: bold;
 `
 export const WebsiteRights = styled.small`
-color: #000;
+color: ${colors.black};
 margin-bottom: 1rem;
 `
 
@@ -120,6 +121,11 @@ width: 240px;
 `
 
 export const SocialIconLink = styled.a`
-color: #000;
+color: ${colors.black};
 font-size: 1.5rem;
+
+&:hover{
+    color: ${colors.green}; 
+    transition: 0.3s ease-in-out;
+}
 `

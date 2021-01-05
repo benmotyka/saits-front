@@ -2,13 +2,14 @@ import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 import {FaTimes} from 'react-icons/fa'
+import {colors} from "../constants"
 
 export const SidebarContainer = styled.aside`
 position: fixed;
 z-index: 100;
 width: 100%;
 height: 100%;
-background: #0d0d0d;
+background: ${colors.black};
 display: grid;
 align-items: center;
 top: 0;
@@ -19,7 +20,7 @@ top: ${({isOpen}) => (isOpen? '0': '-100%')};
 `
 
 export const CloseIcon = styled(FaTimes)`
-color: #fff;
+color: ${colors.white};
 `
 export const Icon = styled.div`
 position: absolute;
@@ -32,7 +33,7 @@ outline: none;
 `;
 
 export const SidebarWrapper = styled.div`
-color: #fff;
+color: ${colors.white};
 `
 
 export const SidebarMenu = styled.ul`
@@ -56,11 +57,11 @@ list-style: none;
 transition: 0.2s ease-in-out;
 text-decoration: none;
 font-weight: bold;
-color: #fff;
+color: ${colors.white};
 cursor: pointer;
 
 &:hover{
-    color: #00ab00;//#01bf71;
+    color: ${colors.green};
     transition: 0.2s ease-in-out;
 }
 `
@@ -72,10 +73,10 @@ justify-content: center;
 
 export const SidebarRoute = styled(LinkR)`
 border-radius: 25px;
-background: #00ab00;//#01bf71;
+background: ${colors.green};
 white-space: nowrap;
 padding: 16px 64px;
-color: #010606;
+color: ${colors.black};
 font-size: 1rem;
 outline: none;
 border: none;
@@ -85,7 +86,7 @@ text-decoration: none;
 
 &:hover{
     transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606
+    background: ${colors.white};
+    color: ${colors.black};
 }
 `

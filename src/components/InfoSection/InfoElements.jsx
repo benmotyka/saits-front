@@ -1,8 +1,9 @@
 import styled from "styled-components"
+import {colors} from "../constants"
 
 export const InfoContainer = styled.div`
-color: #fff;
-background: ${({dark}) => (dark?"#010606": "#f9f9f9")};
+color: ${colors.white};
+background: ${({dark}) => (dark?colors.dark:colors.white)};
 
 @media screen and (max-width: 768px){
 padding: 100px 0;
@@ -51,7 +52,7 @@ padding-bottom: 60px;
 `
 
 export const TopLine = styled.p`
-color: #00ab00;
+color: ${colors.green};
 font-size: 1rem;
 line-height: 1rem;
 font-weight: 600;
@@ -66,7 +67,7 @@ font-size: 3rem;
 line-height: 1.2;
 font-weight: bold;
 
-color: ${({dark}) => (dark?"#010606": "#f9f9f9")};
+color: ${({dark}) => (dark?colors.black:colors.white)};
 
 @media screen and (max-width: 480px){
     font-size: 2rem;
@@ -78,7 +79,7 @@ max-width: 440px;
 margin-bottom: 35px;
 font-size: 1rem;
 line-height: 1.5rem;
-color: ${({dark}) => (dark?"#010606": "#f9f9f9")};
+color: ${({dark}) => (dark?colors.black:colors.white)};
 `
 
 export const BtnWrap = styled.div`
@@ -96,14 +97,3 @@ width: 100%;
 margin: 0 0 10px 0;
 padding-right: 0;
 `
-// export const Column1 = styled.div`
-// margin-bottom: 1rem;
-// padding: 0 1rem;
-// grid-area: col1;
-// `
-
-// export const Column2 = styled.div`
-// margin-bottom: 1rem;
-// padding: 0 1rem;
-// grid-area: col2;
-// `

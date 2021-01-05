@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 import {FiArrowRight, FiArrowRightCircle} from 'react-icons/fi'
+import {colors} from "../constants"
 
 export const HeroContainer = styled.div`
-background: #0b0b0b;
+background: ${colors.black};
 display: flex;
 justify-content: center;
 align-items: center;
@@ -42,7 +43,7 @@ height: 100%;
 //maintain aspect ratio but crop video
 --o-object-fit: cover; 
 object-fit: cover;
-background: #233427;
+background: ${colors.darkGreen};
 `
 
 export const HeroContent = styled.div`
@@ -56,7 +57,7 @@ z-index: 3;
 `
 
 export const HeroH1 = styled.h1`
-color: #fff;
+color: ${colors.white};
 font-size: 3.5rem;
 text-align: center;
 
@@ -71,7 +72,7 @@ text-align: center;
 
 export const HeroP = styled.p`
 margin: 1.6rem 0;
-color: #fff;
+color: ${colors.white};
 font-size: 2.5rem;
 text-align: center;
 max-width: 600px;

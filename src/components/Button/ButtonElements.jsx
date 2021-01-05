@@ -1,12 +1,13 @@
 import styled from 'styled-components'
 import {Link} from 'react-scroll'
+import {colors} from "../constants"
 
 export const Button = styled(Link)`
 border-radius: 3rem;
-background: #00ab00;
+background: ${colors.green};
 white-space: nowrap;
 padding: ${({big}) => (big?'0.8rem 2.4rem': '0.6rem 1.8rem')};
-color: ${({dark}) => (dark? '#000': "#fff")};
+color: ${({dark}) => (dark? colors.black: colors.white)};
 font-size: ${({fontbig}) => (fontbig? '1.5rem':'1rem')};
 outline: none;
 border: none;
@@ -20,7 +21,7 @@ text-decoration: none;
 
 &:hover{
     transition: all 0.2s ease-in-out;
-    background: #fff;
+    background: ${colors.white};
     
 }
 `
