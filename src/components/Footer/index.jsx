@@ -1,8 +1,9 @@
 import React from 'react'
 import { animateScroll as scroll } from 'react-scroll';
 import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, FooterLinkExternal, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink } from "./FooterElements"
-
+import { AiOutlineArrowUp as ArrowUpIcon } from "react-icons/ai";
 import { FaFacebook, FaDiscord, FaYoutube, FaInstagram } from 'react-icons/fa'
+import { ArrowDown } from "../Button/ArrowDown";
 
 function Footer() {
     const toggleHome = () => {
@@ -45,8 +46,17 @@ function Footer() {
                 </FooterLinksContainer>
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <SocialLogo onClick={toggleHome}>
-                            SAITS
+                        <SocialLogo >
+                        <ArrowDown
+                        onClick={toggleHome}
+          smooth={true}
+          duration={500}
+          offset={-80}
+          spy={true}
+          exact="true"
+        >
+          <ArrowUpIcon></ArrowUpIcon>
+        </ArrowDown>
             </SocialLogo>
                         <WebsiteRights>
                             SAITS © {new Date().getFullYear()} wszelkie prawa zastrzeżone.

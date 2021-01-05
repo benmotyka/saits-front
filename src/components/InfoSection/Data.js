@@ -30,9 +30,11 @@ export const frontObj2 = {
   src: "/img/conference.svg",
   alt: "Konferencja osoba",
   primary: true,
+  to: "projects",
   btnLink: "https://konf.sasit.prz.edu.pl/", //doesn't work, idk why, i'll set it statically in index.js
 };
 
+//DOESN'T EXIST YET
 export const frontObj3 = {
   id: "projects",
   dark: true,

@@ -16,6 +16,8 @@ import {
   Img,
 } from "./InfoElements";
 import { ArrowForward, ArrowRight } from "../HeroSection/HeroElements";
+import { ArrowDown } from "../Button/ArrowDown";
+import { AiOutlineArrowDown as ArrowDownIcon } from "react-icons/ai";
 
 const InfoSection = ({
   dark,
@@ -65,6 +67,16 @@ const InfoSection = ({
                   >
                     {buttonText} {hover ? <ArrowForward /> : <ArrowRight />}
                   </Button>
+                  <ArrowDown
+          to={to}
+          smooth={true}
+          duration={500}
+          offset={-80}
+          spy={true}
+          exact="true"
+        >
+          <ArrowDownIcon></ArrowDownIcon>
+        </ArrowDown>
                 </BtnWrap>
               </TextWrapper>
             </Column1>

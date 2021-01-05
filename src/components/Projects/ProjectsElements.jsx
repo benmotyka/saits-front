@@ -22,7 +22,7 @@ background: ${colors.black};
 export const ProjectsH1 = styled.h2`
 font-size: 2rem;
 color: ${colors.white};
-margin-bottom: 64px;
+margin-bottom: 30px;
 
 @media screen and (max-width: 480px){
     font-size: 1.5rem;
@@ -37,6 +37,7 @@ grid-template-columns: 1fr 1fr 1fr;
 align-items: center;
 grid-gap: 1rem;
 padding: 0 50px;
+margin-bottom: 1.5rem;
 
 @media screen and (max-width: 1000px){
     grid-template-columns: 1fr 1fr;
