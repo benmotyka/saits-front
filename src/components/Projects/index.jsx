@@ -26,9 +26,10 @@ const Projects = () => {
                     <ProjectsH2>Kanał YouTube</ProjectsH2>
                     <ProjectsP>Prowadzimy również kanał na platformie YouTube, na którym reguralnie publikujemy nowe materiały związane z bezpieczeństwem w sieci</ProjectsP>
                 </ProjectsCard>
-                <ProjectsCard onClick={() => window.open("https://pl.wikipedia.org/wiki/Projekt_socjalny")}>
+                {/* <ProjectsCard onClick={() => window.open("https://pl.wikipedia.org/wiki/Projekt_socjalny")}> */}
+                <ProjectsCard>
                     <ProjectsLogo src="/img/project-security.svg"/>
-                    <ProjectsH2>Projekt społeczny</ProjectsH2>
+                    <ProjectsH2>Projekty edukacyjne</ProjectsH2>
                     <ProjectsP>Pomagamy osobom nie związanym w branżą w podnoszeniu kompetencji z szeroko pojętego bezpieczeństwa IT</ProjectsP>
                 </ProjectsCard>
                 

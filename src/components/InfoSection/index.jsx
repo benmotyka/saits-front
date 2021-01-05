@@ -49,7 +49,18 @@ const InfoSection = ({
                 <Heading dark={darkText}>{headline}</Heading>
                 <Subtitle dark={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button
+
+                  <ArrowDown
+          to={to}
+          smooth={true}
+          duration={500}
+          offset={-80}
+          spy={true}
+          exact="true"
+        >
+          <ArrowDownIcon></ArrowDownIcon>
+        </ArrowDown>
+        <Button
                     hidden={btnHidden
                     }
                     href={to}
@@ -67,16 +78,6 @@ const InfoSection = ({
                   >
                     {buttonText} {hover ? <ArrowForward /> : <ArrowRight />}
                   </Button>
-                  <ArrowDown
-          to={to}
-          smooth={true}
-          duration={500}
-          offset={-80}
-          spy={true}
-          exact="true"
-        >
-          <ArrowDownIcon></ArrowDownIcon>
-        </ArrowDown>
                 </BtnWrap>
               </TextWrapper>
             </Column1>

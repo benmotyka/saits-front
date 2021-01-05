@@ -25,4 +25,3 @@ Jak to ma działać to musi być chyba
   // "homepage":"new/",
 
   //todo jeszcze 
-linki do youtube, instagram, copy text do onas 

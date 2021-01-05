@@ -22,6 +22,6 @@ text-decoration: none;
 &:hover{
     transition: all 0.2s ease-in-out;
     background: ${colors.white};
-    
+    border: 1px solid ${colors.green};
 }
 `
