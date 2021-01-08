@@ -8,7 +8,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 0 25px;
-height: 100vh;
+height: 98vh;//100vh normally, but somehow doesn't work on fhd 15.6 screens
 position: relative;
 z-index: 1;
 

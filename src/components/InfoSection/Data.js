@@ -33,20 +33,3 @@ export const frontObj2 = {
   to: "projects",
   btnLink: "https://konf.sasit.prz.edu.pl/", //doesn't work, idk why, i'll set it statically in index.js
 };
-
-//DOESN'T EXIST YET
-export const frontObj3 = {
-  id: "projects",
-  dark: true,
-  darkText: false,
-  topLine: "Realizujemy również inne przedsięwzięcia",
-  headline: "Projekty",
-  SubtitleDark: "false",
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel nisi purus. Mauris ornare sodales velit ac iaculis. Aliquam erat volutpat. Vestibulum nec tellus turpis. Nulla vulputate eros at ante scelerisque fringilla. Sed at tincidunt lectus, sit amet finibus leo. Pellentesque eu elit non quam blandit consectetur vitae at sapien. ",
-  buttonText: "Dołącz do nas",
-  imgStart: false,
-  src: "/img/projects.svg",
-  alt: "O nas grafika osoby",
-  primary: true,
-};

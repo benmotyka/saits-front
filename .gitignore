@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/concept
 /.pnp
 .pnp.js
 .notes.txt

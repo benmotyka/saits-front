@@ -11,7 +11,7 @@ import {
   ArrowRight,
 } from "./HeroElements";
 import { Button } from "../Button/ButtonElements";
-import { ArrowDown } from "../Button/ArrowDown";
+import { ArrowDown } from "../ArrowButtons/ArrowDown";
 import Typical from "react-typical";
 import { AiOutlineArrowDown as ArrowDownIcon } from "react-icons/ai";
 
@@ -27,6 +27,7 @@ const HeroSection = () => {
           type="video/mp4"
           muted
           autoPlay
+          playsInline
           loop
           src="/video/hero-video2.mp4"
         />

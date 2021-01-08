@@ -3,7 +3,7 @@ import { animateScroll as scroll } from 'react-scroll';
 import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, FooterLinkExternal, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink } from "./FooterElements"
 import { AiOutlineArrowUp as ArrowUpIcon } from "react-icons/ai";
 import { FaFacebook, FaDiscord, FaYoutube, FaInstagram } from 'react-icons/fa'
-import { ArrowDown } from "../Button/ArrowDown";
+import { ArrowDown } from "../ArrowButtons/ArrowDown";
 
 function Footer() {
     const toggleHome = () => {

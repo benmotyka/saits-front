@@ -16,7 +16,7 @@ import {
   Img,
 } from "./InfoElements";
 import { ArrowForward, ArrowRight } from "../HeroSection/HeroElements";
-import { ArrowDown } from "../Button/ArrowDown";
+import { ArrowDown } from "../ArrowButtons/ArrowDown";
 import { AiOutlineArrowDown as ArrowDownIcon } from "react-icons/ai";
 
 const InfoSection = ({
