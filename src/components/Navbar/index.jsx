@@ -43,9 +43,9 @@ const toggleHome = () => {
               <NavItem>
                   <NavLinks to="projects" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Działalność</NavLinks>
               </NavItem>
-              {/* <NavItem>
-                  <NavLinks to="gallery">Galeria</NavLinks>
-              </NavItem> */}
+              <NavItem>
+                  <NavLinks to="contact" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Kontakt</NavLinks>
+              </NavItem>
             </NavMenu>
             {/* <NavBtn>
                 <NavBtnLink to ="/login">Logowanie</NavBtnLink>
