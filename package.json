@@ -19,7 +19,9 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "build": "GENERATE_SOURCEMAP=false && react-scripts build",
+    "winBuild": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build"
   },
   "eslintConfig": {
     "extends": [
