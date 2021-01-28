@@ -21,7 +21,7 @@ background: ${colors.black};
 `
 
 export const ProjectsH1 = styled.h2`
-font-size: 2rem;
+font-size: 45px;
 color: ${colors.white};
 margin-bottom: 30px;
 

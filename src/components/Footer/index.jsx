@@ -30,20 +30,14 @@ function Footer() {
                             <FooterLinkExternal target="_blank" href="https://www.youtube.com/channel/UCoUdn059OkXrwJ8qHBlD9eA">YouTube</FooterLinkExternal>
                             <FooterLink target="_blank" href="https://discord.gg/QWtaJzweZd">Discord</FooterLink>
                         </FooterLinkItems>
-                    </FooterLinksWrapper>
-                    <FooterLinksWrapper>
-                        {/* <FooterLinkItems>
-                            <FooterLinkTitle>Partnerzy</FooterLinkTitle>
-                            <FooterLinkExternal target="_blank" href="https://w.prz.edu.pl/">Politechnika Rzeszowska</FooterLinkExternal>
-                            <FooterLinkExternal target="_blank" href="https://weii.prz.edu.pl/">WEiI PRz</FooterLinkExternal>
-                        </FooterLinkItems> */}
-                        {/* <FooterLinkItems>
+                        <FooterLinkItems>
                             <FooterLinkTitle>Kontakt</FooterLinkTitle>
                             <FooterLinkExternal href="mailto:saits@prz.edu.pl">sasit@prz.edu.pl</FooterLinkExternal>
                             <FooterLinkExternal target="_blank" href="https://www.google.com/maps/place/Aleja+Powsta%C5%84c%C3%B3w+Warszawy+12,+35-959+Rzesz%C3%B3w/data=!4m2!3m1!1s0x473cfbb343ad0907:0xecdfcdf8b501fd15?sa=X&ved=2ahUKEwiT-qes04TuAhW-AxAIHdXgC8UQ8gEwAHoECAMQAQ">al. Powstańców Warszawy 12</FooterLinkExternal>
                             <FooterLinkExternal target="_blank" href="https://www.google.com/maps/place/Aleja+Powsta%C5%84c%C3%B3w+Warszawy+12,+35-959+Rzesz%C3%B3w/data=!4m2!3m1!1s0x473cfbb343ad0907:0xecdfcdf8b501fd15?sa=X&ved=2ahUKEwiT-qes04TuAhW-AxAIHdXgC8UQ8gEwAHoECAMQAQ">35-959 Rzeszów</FooterLinkExternal>
-                        </FooterLinkItems> */}
+                        </FooterLinkItems>
                     </FooterLinksWrapper>
+
                 </FooterLinksContainer>
                 <SocialMedia>
                     <SocialMediaWrap>

@@ -9,7 +9,7 @@ padding: 60px;
 width: 100%;
 @media screen and (max-width: 768px){
     padding: 60px 10px;;
-    height: 150vh;
+    height: 120vh;
 }
 `
 
@@ -88,16 +88,15 @@ height: 150px;
 `
 
 export const LocalizationContainer = styled.div`
-background-color: green;
+
 `
 
 export const MapContainer = styled.div`
-
+width: 100%;
+height: 100%;
 `
 
-export const LocalizationTextContainer = styled.div`
 
-`
 export const FormMessageInput = styled.textarea`
 border-radius: 15px;
 border: 1px solid green;
@@ -127,3 +126,4 @@ display: flex;
 align-items: center;
 justify-content: center;
 `
+
