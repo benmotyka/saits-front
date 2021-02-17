@@ -33,8 +33,8 @@ function Footer() {
                         <FooterLinkItems>
                             <FooterLinkTitle>Kontakt</FooterLinkTitle>
                             <FooterLinkExternal href="mailto:saits@prz.edu.pl">sasit@prz.edu.pl</FooterLinkExternal>
-                            <FooterLinkExternal target="_blank" href="https://www.google.com/maps/place/Aleja+Powsta%C5%84c%C3%B3w+Warszawy+12,+35-959+Rzesz%C3%B3w/data=!4m2!3m1!1s0x473cfbb343ad0907:0xecdfcdf8b501fd15?sa=X&ved=2ahUKEwiT-qes04TuAhW-AxAIHdXgC8UQ8gEwAHoECAMQAQ">al. Powstańców Warszawy 12</FooterLinkExternal>
-                            <FooterLinkExternal target="_blank" href="https://www.google.com/maps/place/Aleja+Powsta%C5%84c%C3%B3w+Warszawy+12,+35-959+Rzesz%C3%B3w/data=!4m2!3m1!1s0x473cfbb343ad0907:0xecdfcdf8b501fd15?sa=X&ved=2ahUKEwiT-qes04TuAhW-AxAIHdXgC8UQ8gEwAHoECAMQAQ">35-959 Rzeszów</FooterLinkExternal>
+                            <FooterLinkExternal target="_blank" href="https://www.google.com/maps/place/Aleja+Powsta%C5%84c%C3%B3w+Warszawy+12,+35-959+Rzesz%C3%B3w/data=!4m2!3m1!1s0x473cfbb343ad0907:0xecdfcdf8b501fd15?sa=X&ved=2ahUKEwiT-qes04TuAhW-AxAIHdXgC8UQ8gEwAHoECAMQAQ">Wincentego Pola 2</FooterLinkExternal>
+                            <FooterLinkExternal target="_blank" href="https://www.google.com/maps/place/Aleja+Powsta%C5%84c%C3%B3w+Warszawy+12,+35-959+Rzesz%C3%B3w/data=!4m2!3m1!1s0x473cfbb343ad0907:0xecdfcdf8b501fd15?sa=X&ved=2ahUKEwiT-qes04TuAhW-AxAIHdXgC8UQ8gEwAHoECAMQAQ">35-021 Rzeszów</FooterLinkExternal>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
 

@@ -48,7 +48,7 @@ const Projects = () => {
             <ProjectsH2>Kanał YouTube</ProjectsH2>
             <ProjectsP>
               Prowadzimy również kanał na platformie YouTube, na którym
-              reguralnie publikujemy nowe materiały związane z bezpieczeństwem w
+              regularnie publikujemy nowe materiały związane z bezpieczeństwem w
               sieci
             </ProjectsP>
           </ProjectsCard>

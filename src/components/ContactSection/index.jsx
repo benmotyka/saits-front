@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Button } from "../Button/ButtonElements";
 import { animateScroll as scroll } from "react-scroll";
-import Swal from "sweetalert2";
+import {sweetalert} from "../../common/functions/sweetalert.js"
+import {validateEmailData} from "../../common/functions/validateEmailData.js"
 
 import {
   ContactSectionContainer,
@@ -14,10 +15,8 @@ import {
   FormInputMessageWrapper,
   LocalizationContainer,
   MapContainer,
-  LocalizationTextContainer,
   ContactSectionHeader,
   FormMessageInput,
-  FormButton,
   FormButtonContainer,
 } from "./ContactSectionElements";
 
@@ -31,40 +30,69 @@ function ContactSection() {
     setHover(!hover);
   };
 
+  const [values, setValues] = useState({
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const set = (field) => {
+    return ({ target: { value } }) => {
+      setValues((oldValues) => ({ ...oldValues, [field]: value }));
+    };
+  };
+
   const toogleFooter = () => {
     // eslint-disable-next-line no-restricted-globals
     scroll.scrollToBottom();
   };
 
-  const sendMail = async () => {
-    //todo validate entries
-    //todo async func send email topic message through email
-    await Swal.fire({
-      icon: "success",
-      title: "Wiadomość wysłana!",
-      showConfirmButton: false,
-      timer: 2000,
-    });
-    window.location.reload(false);
+  const sendFormData = async () => {
+    // const response = await axios.post("/email", { values });
+
+    //if response status = 200
+
+    sweetalert("success", "Wiadomość wysłana!");
+  };
+
+  const sendMail = async (event) => {
+    event.preventDefault();
+    try {
+      if (
+        await validateEmailData(values.email, values.subject, values.message)
+      ) {
+        setValues({
+          email: "",
+          subject: "",
+          message: "",
+        });
+        await sendFormData();
+      }
+    } catch (error) {
+      alert(error);
+    }
   };
 
   return (
     <ContactSectionContainer id="contact">
-      <ContactSectionHeader>Skontaktuj się z nami!</ContactSectionHeader>
+      <ContactSectionHeader>Kontakt</ContactSectionHeader>
       <ContactSectionWrapper>
         <FormContainer>
           <FormWrapper>
             <FormInputWrapper>
               <FormLabel>Email</FormLabel>
-              <FormInput />
+              <FormInput value={values.email}
+                  onChange={set("email")}/>
             </FormInputWrapper>
             <FormInputWrapper>
               <FormLabel>Temat</FormLabel>
-              <FormInput />
+              <FormInput           value={values.subject}
+                  onChange={set("subject")}/>
             </FormInputWrapper>
             <FormInputMessageWrapper>
               <FormLabel>Treść</FormLabel>
-              <FormMessageInput required="true" />
+              <FormMessageInput value={values.message}
+                  onChange={set("message")} />
             </FormInputMessageWrapper>
             <FormButtonContainer>
               <Button dark="true" fontbig="true" onClick={sendMail}>
