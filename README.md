@@ -1,4 +1,4 @@
-#  [saits.prz.edu.pl](saits.prz.edu.pl)
+#  [saits.prz.edu.pl](https://saits.prz.edu.pl)
 
 #### Page for SAITS - Politechnika Rzeszowska science club.
 
