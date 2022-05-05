@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { Button } from "../Button/ButtonElements";
 import { animateScroll as scroll } from "react-scroll";
 import {sweetalert} from "../../common/functions/sweetalert.js"
-import {validateEmailData} from "../../common/functions/validateEmailData.js"
 import HCaptcha from "@hcaptcha/react-hcaptcha";
+import EmailValidator from "email-validator";
 
 import {
   ContactSectionContainer,
@@ -26,8 +26,12 @@ import Map from "../Map/index";
 import { ArrowDown } from "../ArrowButtons/ArrowDown";
 import { AiOutlineArrowDown as ArrowDownIcon } from "react-icons/ai";
 
-// const apiUrl = 'http://localhost:3001'
 const apiUrl = 'https://saits-api.herokuapp.com'
+const HCAPTCHA_KEY = '4c06a02d-4657-4f09-89d8-a6eb83b3a244'
+// dev 
+// const apiUrl = 'http://localhost:3001'
+// const HCAPTCHA_KEY = '10000000-ffff-ffff-ffff-000000000001'
+
 function ContactSection() {
   const [token, setToken] = useState(null);
   const captchaRef = useRef(null);
@@ -74,16 +78,20 @@ function ContactSection() {
   const sendMail = async (event) => {
     event.preventDefault();
     try {
-      if (
-        await validateEmailData(values.email, values.subject, values.message)
-      ) {
-        setValues({
-          email: "",
-          subject: "",
-          message: "",
-        });
-        await sendFormData();
-      }
+      if (!EmailValidator.validate(values.email)) return sweetalert("error", "Błędny email!");
+
+      if (values.subject.length < 3) return sweetalert("error", "Błędny temat!");
+
+      if (values.message.length < 5) return sweetalert("error", "Błędna treść!");
+
+      if (!token) return sweetalert("error", "Wypełnij CAPTCHA!");
+
+      setValues({
+        email: "",
+        subject: "",
+        message: "",
+      });
+      await sendFormData();
     } catch (error) {
       alert(error);
     }
@@ -102,7 +110,7 @@ function ContactSection() {
             </FormInputWrapper>
             <FormInputWrapper>
               <FormLabel>Temat</FormLabel>
-              <FormInput           value={values.subject}
+              <FormInput value={values.subject}
                   onChange={set("subject")}/>
             </FormInputWrapper>
             <FormInputMessageWrapper>
@@ -112,7 +120,7 @@ function ContactSection() {
             </FormInputMessageWrapper>
             <FormInputWrapper>
             <HCaptcha
-              sitekey="4c06a02d-4657-4f09-89d8-a6eb83b3a244"
+              sitekey={HCAPTCHA_KEY}
               onVerify={setToken}
               ref={captchaRef}
             />

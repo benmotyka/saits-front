@@ -2,7 +2,7 @@ import styled from "styled-components"
 import {colors} from "../constants"
 
 export const InfoContainer = styled.div`
-height: 100vh;
+min-height: 100vh;
 color: ${colors.white};
 background: ${({dark}) => (dark?colors.dark:colors.white)};
 
