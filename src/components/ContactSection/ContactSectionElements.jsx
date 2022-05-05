@@ -33,15 +33,19 @@ width: 100%;
 height: 400px;
 padding: 0 80px;
 
+@media screen and (max-width: 1200px){
+padding: 0;
+}
+
 @media screen and (max-width: 768px){
 grid-template-columns: 1fr ;
     width: 100%;
-    padding: 0;
+    padding: 0 20px;
 height: 600px;
 }
 `
 
-export const FormContainer = styled.div`
+export const FormContainer = styled.form`
 `
 
 export const FormWrapper = styled.div`
@@ -49,15 +53,22 @@ display: flex;
 justify-content: space-evenly;
 flex-direction: column;
 height: 100%;
+@media screen and (max-width: 768px){
+    margin-bottom: 100px;
+}
 `
 
 export const FormInputWrapper = styled.div`
 display: flex;
 justify-content: space-between;
-height: 75px;
 flex-direction: column;
+margin: 5px 0;
 text-align: center;
 padding: 0 100px;
+
+@media screen and (max-width: 1200px){
+padding: 0 30px;
+}
 
 @media screen and (max-width: 768px){
 padding: 0;
@@ -94,6 +105,10 @@ export const LocalizationContainer = styled.div`
 export const MapContainer = styled.div`
 width: 100%;
 height: 100%;
+
+@media screen and (max-width: 768px){
+    display: none;
+}
 `
 
 
@@ -125,5 +140,6 @@ export const FormButtonContainer = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
+margin-top: 20px;
 `
 

@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Button } from "../Button/ButtonElements";
 import { animateScroll as scroll } from "react-scroll";
 import {sweetalert} from "../../common/functions/sweetalert.js"
 import {validateEmailData} from "../../common/functions/validateEmailData.js"
+import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 import {
   ContactSectionContainer,
@@ -20,11 +21,16 @@ import {
   FormButtonContainer,
 } from "./ContactSectionElements";
 
+
 import Map from "../Map/index";
 import { ArrowDown } from "../ArrowButtons/ArrowDown";
 import { AiOutlineArrowDown as ArrowDownIcon } from "react-icons/ai";
 
+// const apiUrl = 'http://localhost:3001'
+const apiUrl = 'https://saits-api.herokuapp.com'
 function ContactSection() {
+  const [token, setToken] = useState(null);
+  const captchaRef = useRef(null);
   const [hover, setHover] = useState(false);
   const onHover = () => {
     setHover(!hover);
@@ -48,10 +54,20 @@ function ContactSection() {
   };
 
   const sendFormData = async () => {
-    // const response = await axios.post("/email", { values });
-
-    //if response status = 200
-
+    await fetch(`${apiUrl}/saits/contact`, {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        senderEmail: values.email,
+        subject: values.subject,
+        message: values.message,
+        captcha: token
+      })
+    });
+  
     sweetalert("success", "Wiadomość wysłana!");
   };
 
@@ -94,8 +110,16 @@ function ContactSection() {
               <FormMessageInput value={values.message}
                   onChange={set("message")} />
             </FormInputMessageWrapper>
+            <FormInputWrapper>
+            <HCaptcha
+              sitekey="4c06a02d-4657-4f09-89d8-a6eb83b3a244"
+              onVerify={setToken}
+              ref={captchaRef}
+            />
+            </FormInputWrapper>
+
             <FormButtonContainer>
-              <Button dark="true" fontbig="true" onClick={sendMail}>
+              <Button dark="true" fontbig="true" onClick={sendMail} >
                 Prześlij
               </Button>
             </FormButtonContainer>
@@ -114,7 +138,7 @@ function ContactSection() {
         offset={-80}
         spy={true}
         exact="true"
-        style={{ margin: "20px auto 0 auto" }}
+        style={{ margin: "100px auto 0 auto" }}
       >
         <ArrowDownIcon></ArrowDownIcon>
       </ArrowDown>

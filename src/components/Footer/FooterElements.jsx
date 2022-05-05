@@ -46,7 +46,7 @@ width: 160px;
 box-sizing: border-box;
 color: ${colors.white};
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 600px){
     margin: 0 5px;
     padding: 10px;
     width: 100%;

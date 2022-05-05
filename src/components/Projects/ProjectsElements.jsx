@@ -62,6 +62,10 @@ padding: 30px;
 box-shadow: 0 2px 2px rgba(0,0,0,0.3);
 transition: all 0.2s ease-in-out;
 
+@media screen and (max-width: 768px){
+padding: 15px;
+}
+
 &:hover{
 transform: scale(1.02);
 transition: all 0.2s ease-in-out;
