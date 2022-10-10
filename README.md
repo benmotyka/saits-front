@@ -9,7 +9,9 @@
   <h3 align="center">Science Club</h3>
   <h5 align="center">Rzeszow University of Technology</h5>
   <p align="center">
-    <a href="https://saits.prz.edu.pl"><h4>Explore the page »</h4></a>
+    <a href="https://saits.prz.edu.pl"><strong>Explore the page »</strong></a>
+    <br />
+    <br />
     <a href="https://github.com/benmotyka/saits_front/issues">Report Bug</a>
     ·
     <a href="https://github.com/benmotyka/saits_front/issues">Request Feature</a>
@@ -47,8 +49,8 @@ Simple one-page website of Something About IT Security - Rzeszow University of T
 The main goal of the website is to present the club and its activities, as well as allow visitors to get in touch with club officials.
 ### Built With
 
-* [![React][react.js]][react-url]
-* [![styled-components][styled-components]][styled-components-url]
+- [React](https://reactjs.org/)
+- [styled-components](https://styled-components.com/)
 
 <!-- GETTING STARTED -->
 
@@ -94,14 +96,6 @@ Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
- -->
-
 ## Contact
 
 Ben Motyka - [LinkedIn](https://www.linkedin.com/in/ben-motyka-97a729240/) - benmotykax@gmail.com
@@ -109,8 +103,3 @@ Ben Motyka - [LinkedIn](https://www.linkedin.com/in/ben-motyka-97a729240/) - ben
 Project Link: [https://github.com/benmotyka/saits_front](https://github.com/benmotyka/saits_front)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-[react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[react-url]: https://reactjs.org/
-[styled-components]: https://img.shields.io/badge/styled--components-v5.3.1-orange
-[styled-components-url]: https://styled-components.com/
