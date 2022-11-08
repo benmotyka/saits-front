@@ -25,12 +25,8 @@ import {
 import Map from "../Map/index";
 import { ArrowDown } from "../ArrowButtons/ArrowDown";
 import { AiOutlineArrowDown as ArrowDownIcon } from "react-icons/ai";
+import { API_URL, HCAPTCHA_KEY } from "../../common/config";
 
-const apiUrl = 'https://saits-api.herokuapp.com'
-const HCAPTCHA_KEY = '4c06a02d-4657-4f09-89d8-a6eb83b3a244'
-// dev 
-// const apiUrl = 'http://localhost:3001'
-// const HCAPTCHA_KEY = '10000000-ffff-ffff-ffff-000000000001'
 
 function ContactSection() {
   const [token, setToken] = useState(null);
@@ -58,7 +54,7 @@ function ContactSection() {
   };
 
   const sendFormData = async () => {
-    await fetch(`${apiUrl}/saits/contact`, {
+    await fetch(`${API_URL}/saits/contact`, {
       method: "POST",
       mode: "cors",
       headers: {
