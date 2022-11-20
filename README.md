@@ -37,6 +37,7 @@
     </li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -101,5 +102,12 @@ Thanks again!
 Ben Motyka - [LinkedIn](https://www.linkedin.com/in/ben-motyka-97a729240/) - benmotykax@gmail.com
 
 Project Link: [https://github.com/benmotyka/saits_front](https://github.com/benmotyka/saits_front)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Acknowledgments
+
+* [SAITS Server](https://github.com/benmotyka/saits_api)
+* [KIS Website](https://github.com/benmotyka/kis_front)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
