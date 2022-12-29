@@ -86,6 +86,7 @@ color: ${({dark}) => (dark?colors.black:colors.white)};
 export const BtnWrap = styled.div`
 display: flex;
 justify-content: space-between;
+align-items: center;
 `
 
 export const ImgWrap = styled.div`

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { Button } from "../Button/ButtonElements";
 import {
   InfoContainer,
@@ -49,20 +49,18 @@ const InfoSection = ({
                 <Heading dark={darkText}>{headline}</Heading>
                 <Subtitle dark={darkText}>{description}</Subtitle>
                 <BtnWrap>
-
                   <ArrowDown
-          to={to}
-          smooth={true}
-          duration={500}
-          offset={-80}
-          spy={true}
-          exact="true"
-        >
-          <ArrowDownIcon></ArrowDownIcon>
-        </ArrowDown>
-        <Button
-                    hidden={btnHidden
-                    }
+                    to={to}
+                    smooth={true}
+                    duration={500}
+                    offset={-80}
+                    spy={true}
+                    exact="true"
+                  >
+                    <ArrowDownIcon></ArrowDownIcon>
+                  </ArrowDown>
+                  <Button
+                    hidden={btnHidden}
                     href={to}
                     onMouseEnter={onHover}
                     onMouseLeave={onHover}
@@ -74,7 +72,9 @@ const InfoSection = ({
                     dark={darkText}
                     big="true"
                     fontbig="true"
-                    onClick={() => window.open("https://konf.sasit.prz.edu.pl/")}
+                    onClick={() =>
+                      window.open("https://konf.sasit.prz.edu.pl/")
+                    }
                   >
                     {buttonText} {hover ? <ArrowForward /> : <ArrowRight />}
                   </Button>

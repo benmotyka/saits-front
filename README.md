@@ -33,6 +33,7 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#deployment">Deployment</a></li>
       </ul>
     </li>
     <li><a href="#contributing">Contributing</a></li>
@@ -45,9 +46,10 @@
 
 ## About The Project
 
-Simple one-page website of Something About IT Security - Rzeszow University of Technology Science Club. 
+Simple one-page website of Something About IT Security - Rzeszow University of Technology Science Club.
 
 The main goal of the website is to present the club and its activities, as well as allow visitors to get in touch with club officials.
+
 ### Built With
 
 - [React](https://reactjs.org/)
@@ -80,6 +82,22 @@ The main goal of the website is to present the club and its activities, as well 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Deployment
+
+If deploying on SAITS hosting:
+
+1. Add the following to `package.json`:
+```
+...
+  "homepage": "new/",
+...
+```
+2. Build static site
+```
+npm run build
+```
+3. Upload it to the server 
+
 <!-- CONTRIBUTING -->
 
 ## Contributing
@@ -107,7 +125,7 @@ Project Link: [https://github.com/benmotyka/saits_front](https://github.com/benm
 
 ## Acknowledgments
 
-* [SAITS Server](https://github.com/benmotyka/saits_api)
-* [KIS Website](https://github.com/benmotyka/kis_front)
+- [SAITS Server](https://github.com/benmotyka/saits_api)
+- [KIS Website](https://github.com/benmotyka/kis_front)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
