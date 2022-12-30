@@ -7,7 +7,7 @@ import {
   frontObj1,
   frontObj2,
   frontObj3,
-} from "../components/InfoSection/Data";
+} from "../components/InfoSection/data";
 import Projects from "../components/Projects";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";

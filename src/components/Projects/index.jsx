@@ -7,7 +7,7 @@ import {
   ProjectsLogo,
   ProjectsH2,
   ProjectsP,
-} from "./ProjectsElements";
+} from "./styles";
 import { ArrowDown } from "../ArrowButtons/ArrowDown";
 import { AiOutlineArrowDown as ArrowDownIcon } from "react-icons/ai";
 

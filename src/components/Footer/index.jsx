@@ -15,7 +15,7 @@ import {
   WebsiteRights,
   SocialIcons,
   SocialIconLink,
-} from "./FooterElements";
+} from "./styles";
 import { AiOutlineArrowUp as ArrowUpIcon } from "react-icons/ai";
 import {
   FaFacebook,

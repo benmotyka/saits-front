@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "../Button/ButtonElements";
+import { Button } from "../Button/styles";
 import {
   InfoContainer,
   InfoWrapper,
@@ -14,8 +14,8 @@ import {
   BtnWrap,
   ImgWrap,
   Img,
-} from "./InfoElements";
-import { ArrowForward, ArrowRight } from "../HeroSection/HeroElements";
+} from "./styles";
+import { ArrowForward, ArrowRight } from "../HeroSection/styles";
 import { ArrowDown } from "../ArrowButtons/ArrowDown";
 import { AiOutlineArrowDown as ArrowDownIcon } from "react-icons/ai";
 

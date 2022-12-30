@@ -7,10 +7,7 @@ import {
   HeroP,
   HeroH1,
   HeroBtnWrapper,
-  ArrowForward,
-  ArrowRight,
-} from "./HeroElements";
-import { Button } from "../Button/ButtonElements";
+} from "./styles";
 import { ArrowDown } from "../ArrowButtons/ArrowDown";
 import Typical from "react-typical";
 import { AiOutlineArrowDown as ArrowDownIcon } from "react-icons/ai";

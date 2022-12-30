@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Button } from "../Button/ButtonElements";
+import { Button } from "../Button/styles";
 import { animateScroll as scroll } from "react-scroll";
 import {sweetalert} from "../../common/functions/sweetalert.js"
 import HCaptcha from "@hcaptcha/react-hcaptcha";
@@ -19,7 +19,7 @@ import {
   ContactSectionHeader,
   FormMessageInput,
   FormButtonContainer,
-} from "./ContactSectionElements";
+} from "./styles";
 
 
 import Map from "../Map/index";
