@@ -66,9 +66,10 @@ The main goal of the website is to present the club and its activities, as well 
 
 ### Installation
 
-1. Clone this repo
+1. Clone this repo and enter project
    ```sh
    git clone https://github.com/benmotyka/saits_front.git
+   cd saits_front/
    ```
 2. Install NPM packages
    ```sh
