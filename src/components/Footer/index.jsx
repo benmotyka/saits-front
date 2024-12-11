@@ -45,6 +45,7 @@ function Footer() {
                 spy={true}
                 exact="true"
                 offset={-80}
+                aria-label="Home"
               >
                 Home
               </FooterLink>
@@ -55,6 +56,7 @@ function Footer() {
                 spy={true}
                 exact="true"
                 offset={-80}
+                aria-label="About Us"
               >
                 O nas
               </FooterLink>
@@ -65,6 +67,7 @@ function Footer() {
                 spy={true}
                 exact="true"
                 offset={-80}
+                aria-label="Konferencja"
               >
                 Konferencja
               </FooterLink>
@@ -75,6 +78,7 @@ function Footer() {
                 spy={true}
                 exact="true"
                 offset={-80}
+                aria-label="Działalność"
               >
                 Działalność
               </FooterLink>
@@ -85,6 +89,7 @@ function Footer() {
                 spy={true}
                 exact="true"
                 offset={-80}
+                aria-label="Kontakt"
               >
                 Kontakt
               </FooterLink>
@@ -94,39 +99,51 @@ function Footer() {
               <FooterLinkExternal
                 target="_blank"
                 href="https://www.facebook.com/SAITSPRz"
+                aria-label="Facebook"
               >
                 Facebook
               </FooterLinkExternal>
               <FooterLinkExternal
                 target="_blank"
                 href="https://www.instagram.com/saits.prz/"
+                aria-label="Instagram"
               >
                 Instagram
               </FooterLinkExternal>
               <FooterLinkExternal
                 target="_blank"
                 href="https://www.youtube.com/channel/UCoUdn059OkXrwJ8qHBlD9eA"
+                aria-label="YouTube"
               >
                 YouTube
               </FooterLinkExternal>
-              <FooterLink target="_blank" href="https://discord.gg/QWtaJzweZd">
+              <FooterLinkExternal
+                target="_blank"
+                href="https://discord.gg/QWtaJzweZd"
+                aria-label="Discord"
+              >
                 Discord
-              </FooterLink>
+              </FooterLinkExternal>
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle>Kontakt</FooterLinkTitle>
-              <FooterLinkExternal href="mailto:saits@prz.edu.pl">
+              <FooterLinkExternal
+                href="mailto:saits@prz.edu.pl"
+                aria-label="Email"
+              >
                 sasit@prz.edu.pl
               </FooterLinkExternal>
               <FooterLinkExternal
                 target="_blank"
                 href="https://www.google.com/maps/place/Aleja+Powsta%C5%84c%C3%B3w+Warszawy+12,+35-959+Rzesz%C3%B3w/data=!4m2!3m1!1s0x473cfbb343ad0907:0xecdfcdf8b501fd15?sa=X&ved=2ahUKEwiT-qes04TuAhW-AxAIHdXgC8UQ8gEwAHoECAMQAQ"
+                aria-label="Adres"
               >
                 Wincentego Pola 2
               </FooterLinkExternal>
               <FooterLinkExternal
                 target="_blank"
                 href="https://www.google.com/maps/place/Aleja+Powsta%C5%84c%C3%B3w+Warszawy+12,+35-959+Rzesz%C3%B3w/data=!4m2!3m1!1s0x473cfbb343ad0907:0xecdfcdf8b501fd15?sa=X&ved=2ahUKEwiT-qes04TuAhW-AxAIHdXgC8UQ8gEwAHoECAMQAQ"
+                aria-label="Adres"
               >
                 35-021 Rzeszów
               </FooterLinkExternal>
@@ -135,7 +152,7 @@ function Footer() {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo>
+            <SocialLogo aria-label="Przewiń do góry strony">
               <ArrowDown
                 onClick={toggleHome}
                 smooth={true}
@@ -143,8 +160,9 @@ function Footer() {
                 offset={-80}
                 spy={true}
                 exact="true"
+                aria-label="Przewiń do góry strony"
               >
-                <ArrowUpIcon></ArrowUpIcon>
+                <ArrowUpIcon />
               </ArrowDown>
             </SocialLogo>
             <WebsiteRights>

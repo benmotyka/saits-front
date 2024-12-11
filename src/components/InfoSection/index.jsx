@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { Button } from "../Button/styles";
 import {
   InfoContainer,
@@ -56,12 +55,12 @@ const InfoSection = ({
                     offset={-80}
                     spy={true}
                     exact="true"
+                    aria-label="Przewiń w dół do następnej sekcji"
                   >
                     <ArrowDownIcon></ArrowDownIcon>
                   </ArrowDown>
                   <Button
                     hidden={btnHidden}
-                    href={to}
                     onMouseEnter={onHover}
                     onMouseLeave={onHover}
                     smooth={true}
@@ -75,6 +74,7 @@ const InfoSection = ({
                     onClick={() =>
                       window.open("https://konf.sasit.prz.edu.pl/")
                     }
+                    aria-label="Przejdź do strony konferencji"
                   >
                     {buttonText} {hover ? <ArrowForward /> : <ArrowRight />}
                   </Button>

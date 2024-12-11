@@ -36,6 +36,7 @@ const projectsData = [
       "Pomagamy osobom nie związanym w branżą w podnoszeniu kompetencji z szeroko pojętego bezpieczeństwa IT",
   },
 ];
+
 const Projects = () => {
   return (
     <ProjectsContainer id="projects">
@@ -43,8 +44,14 @@ const Projects = () => {
       <ProjectsWrapper>
         {projectsData.map((item) => (
           <Tilt className="Tilt" options={{ max: 10, scale: 1.05 }}>
-            <ProjectsCard key={item.header} onClick={item.onClick}>
-              <ProjectsLogo src={item.image} />
+            <ProjectsCard
+              key={item.header}
+              onClick={item.onClick}
+              role="button"
+              tabIndex="0"
+              aria-label={`Przejdź do szczegółów projektu: ${item.header}`}
+            >
+              <ProjectsLogo src={item.image} alt={item.header} />
               <ProjectsH2>{item.header}</ProjectsH2>
               <ProjectsP>{item.description}</ProjectsP>
             </ProjectsCard>
@@ -58,8 +65,9 @@ const Projects = () => {
         offset={-80}
         spy={true}
         exact="true"
+        aria-label="Przewiń w dół do następnej sekcji"
       >
-        <ArrowDownIcon></ArrowDownIcon>
+        <ArrowDownIcon />
       </ArrowDown>
     </ProjectsContainer>
   );

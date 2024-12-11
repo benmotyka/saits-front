@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { Button } from "../Button/styles";
 import { animateScroll as scroll } from "react-scroll";
-import {sweetalert} from "../../common/functions/sweetalert.js"
+import { sweetalert } from "../../common/functions/sweetalert.js";
 import HCaptcha from "@hcaptcha/react-hcaptcha";
 import EmailValidator from "email-validator";
 
@@ -21,12 +21,10 @@ import {
   FormButtonContainer,
 } from "./styles";
 
-
 import Map from "../Map/index";
 import { ArrowDown } from "../ArrowButtons/ArrowDown";
 import { AiOutlineArrowDown as ArrowDownIcon } from "react-icons/ai";
 import { API_URL, HCAPTCHA_KEY } from "../../common/config";
-
 
 function ContactSection() {
   const [token, setToken] = useState(null);
@@ -58,27 +56,30 @@ function ContactSection() {
       method: "POST",
       mode: "cors",
       headers: {
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         senderEmail: values.email,
         subject: values.subject,
         message: values.message,
-        captcha: token
-      })
+        captcha: token,
+      }),
     });
-  
+
     sweetalert("success", "Wiadomość wysłana!");
   };
 
   const sendMail = async (event) => {
     event.preventDefault();
     try {
-      if (!EmailValidator.validate(values.email)) return sweetalert("error", "Błędny email!");
+      if (!EmailValidator.validate(values.email))
+        return sweetalert("error", "Błędny email!");
 
-      if (values.subject.length < 3) return sweetalert("error", "Błędny temat!");
+      if (values.subject.length < 3)
+        return sweetalert("error", "Błędny temat!");
 
-      if (values.message.length < 5) return sweetalert("error", "Błędna treść!");
+      if (values.message.length < 5)
+        return sweetalert("error", "Błędna treść!");
 
       if (!token) return sweetalert("error", "Wypełnij CAPTCHA!");
 
@@ -100,40 +101,53 @@ function ContactSection() {
         <FormContainer>
           <FormWrapper>
             <FormInputWrapper>
-              <FormLabel>Email</FormLabel>
-              <FormInput value={values.email}
-                  onChange={set("email")}/>
+              <FormLabel htmlFor="emailInput">Email</FormLabel>
+              <FormInput
+                id="emailInput"
+                value={values.email}
+                onChange={set("email")}
+              />
             </FormInputWrapper>
             <FormInputWrapper>
-              <FormLabel>Temat</FormLabel>
-              <FormInput value={values.subject}
-                  onChange={set("subject")}/>
+              <FormLabel htmlFor="subjectInput">Temat</FormLabel>
+              <FormInput
+                id="subjectInput"
+                value={values.subject}
+                onChange={set("subject")}
+              />
             </FormInputWrapper>
             <FormInputMessageWrapper>
-              <FormLabel>Treść</FormLabel>
-              <FormMessageInput value={values.message}
-                  onChange={set("message")} />
+              <FormLabel htmlFor="messageInput">Treść</FormLabel>
+              <FormMessageInput
+                id="messageInput"
+                value={values.message}
+                onChange={set("message")}
+              />
             </FormInputMessageWrapper>
             <FormInputWrapper>
-            <HCaptcha
-              sitekey={HCAPTCHA_KEY}
-              onVerify={setToken}
-              ref={captchaRef}
-            />
+              <HCaptcha
+                sitekey={HCAPTCHA_KEY}
+                onVerify={setToken}
+                ref={captchaRef}
+                aria-label="Weryfikacja bezpieczeństwa"
+              />
             </FormInputWrapper>
 
             <FormButtonContainer>
-              <Button dark="true" fontbig="true" onClick={sendMail} >
+              <Button dark="true" fontbig="true" onClick={sendMail}>
                 Prześlij
               </Button>
             </FormButtonContainer>
           </FormWrapper>
         </FormContainer>
         <LocalizationContainer>
-          <MapContainer><Map></Map></MapContainer>
+          <MapContainer role="presentation" aria-hidden="true">
+            <Map />
+          </MapContainer>{" "}
         </LocalizationContainer>
       </ContactSectionWrapper>
       <ArrowDown
+        aria-label="Przejdź do stopki strony"
         onClick={toogleFooter}
         onMouseEnter={onHover}
         onMouseLeave={onHover}
@@ -144,7 +158,7 @@ function ContactSection() {
         exact="true"
         style={{ margin: "100px auto 0 auto" }}
       >
-        <ArrowDownIcon></ArrowDownIcon>
+        <ArrowDownIcon />
       </ArrowDown>
     </ContactSectionContainer>
   );

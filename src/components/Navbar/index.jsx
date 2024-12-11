@@ -55,7 +55,7 @@ const Navbar = ({ toggle }) => {
     <Nav scrollNav={scrollNav}>
       <NavbarContainer>
         <NavLogo onClick={toggleHome}>
-          <img src="img/logo.png" width="130px" alt="" />
+          <img src="img/logo.png" width="130px" alt="Logo SAITS" />
         </NavLogo>
         <MobileIcon onClick={toggle}>
           <FaBars />
@@ -70,6 +70,7 @@ const Navbar = ({ toggle }) => {
                 spy={true}
                 exact="true"
                 offset={-80}
+                aria-label={`Przejdź do sekcji ${item.text}`}
               >
                 {item.text}
               </NavLinks>

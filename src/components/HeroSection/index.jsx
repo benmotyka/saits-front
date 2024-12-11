@@ -66,6 +66,7 @@ const HeroSection = () => {
           offset={-80}
           spy={true}
           exact="true"
+          aria-label="Przewiń w dół do następnej sekcji"
         >
           <ArrowDownIcon></ArrowDownIcon>
         </ArrowDown>

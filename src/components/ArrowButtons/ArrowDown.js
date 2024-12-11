@@ -19,5 +19,7 @@ align-items: center;
 transition: all 0.2s ease-in-out;
 display: ${({hidden}) => (hidden?'none':'flex')};
 text-decoration: none;
-
+&:focus {
+    outline: 2px solid ${colors.someHighContrastColor};
+  }
 `
